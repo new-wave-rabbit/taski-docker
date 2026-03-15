@@ -8,7 +8,7 @@ SECRET_KEY = 'django-insecure-j_89af+30&&4qm*8z9_(^zz8p4-ho8z_m6ylm0s$h!-p@on1_^
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '123.123.123.123', 'yp-manual-deploy.dis-lcl.ru']
+ALLOWED_HOSTS = ['localhost', '158.160.227.165', 'yp-manual-deploy.dis-lcl.ru']
 
 INSTALLED_APPS = [
     'api.apps.ApiConfig',
