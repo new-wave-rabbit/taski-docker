@@ -185,6 +185,14 @@ jobs:
           # с которым установлено соединение
           script: |
             cd taski
+            cat <<EOF > .env
+            DEBUG=False
+            POSTGRES_USER=django_user
+            POSTGRES_PASSWORD=${{ secrets.POSTGRES_PASSWORD }}
+            POSTGRES_DB=django
+            DB_HOST=db
+            DB_PORT=5432
+            EOF
             # Выполняет pull образов с Docker Hub
             sudo docker compose -f docker-compose.production.yml pull
             # Перезапускает все контейнеры в Docker Compose
