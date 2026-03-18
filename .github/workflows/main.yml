@@ -25,7 +25,6 @@ jobs:
     # устанавливаем зависимости проекта
     - name: Install dependencies
       run: |
-        apt install libpq-dev python3-dev
         python -m pip install --upgrade pip setuptools
         pip install flake8==6.0.0 flake8-isort==6.0.0
     # Запускаем flake8
